@@ -1,14 +1,14 @@
-[![GitHub Actions status | e2e-boilerplate/wd-commonjs-webdriver-manager-mocha-chai-expect](https://github.com/e2e-boilerplate/wd-commonjs-webdriver-manager-mocha-chai-expect/workflows/wd-commonjs-webdriver-manager-mocha-chai-expect/badge.svg)](https://github.com/e2e-boilerplate/wd-commonjs-webdriver-manager-mocha-chai-expect/actions?workflow=wd-commonjs-webdriver-manager-mocha-chai-expect) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Buy Me A Coffee](https://img.shields.io/badge/buy-me%20coffee-orange)](https://www.buymeacoffee.com/xgirma)
+[![GitHub Actions status | e2e-boilerplate/wd-es-modules-babel-webdriver-manager-ava](https://github.com/e2e-boilerplate/wd-es-modules-babel-webdriver-manager-ava/workflows/wd-es-modules-babel-webdriver-manager-ava/badge.svg)](https://github.com/e2e-boilerplate/wd-es-modules-babel-webdriver-manager-ava/actions?workflow=wd-es-modules-babel-webdriver-manager-ava) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Buy Me A Coffee](https://img.shields.io/badge/buy-me%20coffee-orange)](https://www.buymeacoffee.com/xgirma)
 
 # WD Boilerplate
 
-WD end-to-end test automation boilerplate, Using Commonjs, Webdriver-Manager, Mocha, Chai and Expect.
+WD end-to-end test automation boilerplate, Using ES Modules, Babel, Webdriver-Manager and AVA.
 
 ## Getting Started
 
-1. git clone git@github.com:e2e-boilerplate/wd-commonjs-webdriver-manager-mocha-chai-expect.git
+1. git clone git@github.com:e2e-boilerplate/wd-es-modules-babel-webdriver-manager-ava.git
 
-2. cd wd-commonjs-webdriver-manager-mocha-chai-expect
+2. cd wd-es-modules-babel-webdriver-manager-ava
 
 3. npm install
 

@@ -1,39 +1,33 @@
-const chai = require("chai");
-const { expect } = require("chai");
-const chaiAsPromised = require("chai-as-promised");
-const wd = require("wd");
-const config = require("../config");
+import test from "ava";
+import * as wd from "wd";
+import config from "../config";
 
 const url = "https://e2e-boilerplate.github.io/sandbox/";
 
-chai.use(chaiAsPromised);
-chaiAsPromised.transferPromiseness = wd.transferPromiseness;
+let browser;
 
-describe("Sandbox", () => {
-  let browser;
+test.before(async () => {
+  browser = wd.promiseChainRemote();
+  return config(url, browser);
+});
 
-  before(function fn() {
-    this.timeout(50000);
-    browser = wd.promiseChainRemote();
-    return config(url, browser);
+test.after(async () => {
+  return browser.quit();
+});
+
+test("should be on Sandbox", async (t) => {
+  t.timeout(50000);
+  return browser.title().then((title) => {
+    t.is(title, "Sandbox");
   });
+});
 
-  after(() => {
-    return browser.quit();
-  });
-
-  it("should be on Sandbox", () => {
-    return browser.title().then((title) => {
-      expect(title).to.eql("Sandbox");
+test("should have a page header", async (t) => {
+  t.timeout(50000);
+  return browser
+    .elementByTagName("h1")
+    .text()
+    .then((header) => {
+      t.is(header, "Sandbox");
     });
-  });
-
-  it("should have a page header", () => {
-    return browser
-      .elementByTagName("h1")
-      .text()
-      .then((header) => {
-        expect(header).to.eql("Sandbox");
-      });
-  });
-}).timeout(50000);
+});
