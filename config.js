@@ -1,5 +1,4 @@
 /* eslint-disable global-require */
-
 async function config(url, browser) {
   return process.env.GITHUB_ACTIONS
     ? browser
