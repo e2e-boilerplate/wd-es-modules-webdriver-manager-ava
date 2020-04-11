@@ -16,14 +16,12 @@ test.after(async () => {
 });
 
 test("should be on Sandbox", async (t) => {
-  t.timeout(50000);
   return browser.title().then((title) => {
     t.is(title, "Sandbox");
   });
 });
 
 test("should have a page header", async (t) => {
-  t.timeout(50000);
   return browser
     .elementByTagName("h1")
     .text()
