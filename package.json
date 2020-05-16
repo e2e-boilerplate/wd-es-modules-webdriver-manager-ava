@@ -40,14 +40,15 @@
   "keywords": [
     "ava",
     "babel",
-    "boilerplate",
+    "es modules",
+    "wd",
+    "webdriver manager",
     "e2e",
     "e2e tests",
-    "es modules",
-    "example",
+    "boilerplate",
     "integration test",
-    "wd",
-    "webdriver manager"
+    "test automation",
+    "javascript"
   ],
   "license": "MIT",
   "lint-staged": {
