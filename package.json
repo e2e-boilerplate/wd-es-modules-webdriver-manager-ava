@@ -7,7 +7,7 @@
     "url": "https://github.com/e2e-boilerplate/wd-es-modules-babel-webdriver-manager-ava/issues"
   },
   "dependencies": {
-    "ava": "3.10.0",
+    "ava": "3.10.1",
     "chai-as-promised": "7.1.1",
     "wd": "1.12.1",
     "webdriver-manager": "12.1.7"
